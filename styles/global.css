@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  [data-nextjs-scroll-focus-boundary] {
+    display: contents;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.rainbow-mesh {
+  background-color: rgb(14, 45, 2);
+  background-image: radial-gradient(
+      at 40% 20%,
+      rgb(159, 74, 48) 0px,
+      transparent 50%
+    ), radial-gradient(at 80% 0%, rgb(31, 87, 255) 0px, transparent 50%),
+    radial-gradient(at 0% 50%, rgb(98, 94, 94) 0px, transparent 50%),
+    radial-gradient(at 80% 50%, rgb(44, 48, 75) 0px, transparent 50%),
+    radial-gradient(at 0% 100%, rgb(188, 33, 33) 0px, transparent 50%),
+    radial-gradient(at 80% 100%, rgb(17, 10, 198) 0px, transparent 50%),
+    radial-gradient(at 0% 0%, rgb(242, 39, 39) 0px, transparent 50%);
+}
+
+.candy-mesh {
+  background-color: #152816;
+  background-image: radial-gradient(
+      at 99% 6%,
+      rgb(86, 84, 83) 0px,
+      transparent 50%
+    ),
+    radial-gradient(at 55% 88%, rgb(62, 49, 240) 0px, transparent 50%),
+    radial-gradient(at 53% 27%, rgb(16, 6, 95) 0px, transparent 50%),
+    radial-gradient(at 89% 89%, rgb(0, 0, 7) 0px, transparent 50%),
+    radial-gradient(at 35% 44%, rgb(47, 126, 245) 0px, transparent 50%);
+}
+
+.glass {
+  backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+[data-nextjs-scroll-focus-boundary] {
+  display: contents;
+}
